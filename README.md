@@ -1,63 +1,31 @@
-# CodeIgniter 4 Application Starter
+# 가정교회-360 관리 시스템 테스트 페이지
 
-## What is CodeIgniter?
+## 이 프로그램은 무엇인가요?
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](http://codeigniter.com).
+기존에 있던 360 관리 시스템의 노후화를 보고 개인적으로 개발한 웹페이지 입니다.
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+CodeIgniter 4 + php 7.4를 기반으로 진행했으며 진행 상황에 따라 추가 또는 변경이 있을 예정입니다.
 
-More information about the plans for version 4 can be found in [the announcement](http://forum.codeigniter.com/thread-62615.html) on the forums.
+## 기본 구성
 
-The user guide corresponding to this version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+본 프로그램은 목장 교회 시스템을 운영하고 있는 목회자 및 목자들이 보다 편하게 목장 관리 및 보고를 드릴 수 있도록 만든 웹페이지입니다.
+앞서 설명드린 것 처럼 웹 페이지 전체 개편, 다소 친화적이지 않은 UI 개선, 간단한 UX 보장을 목표로 만들어졌습니다.
 
-## Installation & updates
+때문에 일차적으론 목회자들이 목장의 현 상황을 간편하고 보다 깔끔하게 이해 할 수 있도록 제작되고 있으며
+목자들 또한 쉽고 필수적인 정보들만 입력해 보고의 편의성을 높이고자 하고 있습니다.
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+## 언제쯤 출시될 예정인가요?
 
-## Setup
+개인 프로젝트이면서 풀스택으로 작업을 하다보니 시간이 다소 걸릴 것으로 예상됩니다.
+또한 교회내에서 우선 사용 후 수정 및 정식 건의를 해야 되다보니 정식으로 출시되는 것 조차 불확실합니다.
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+이 점 양해 부탁드립니다.
 
-## Important Change with index.php
+## 앞으로의 계획은 어떻게 되나요>
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+1차: 웹페이지 완성
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+2차: 실제 테스트 및 정식 제안, 성과가 있을 시 정식 출시 예정
 
-**Please** read the user guide for a better explanation of how CI4 works!
-
-## Repository Management
-
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Server Requirements
-
-PHP version 7.3 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
-- xml (enabled by default - don't turn it off)
+3차: (미정) 정식 서비스 시 Electron 기반 연동 프로그램 개발
